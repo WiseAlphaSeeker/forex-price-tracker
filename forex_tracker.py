@@ -1,12 +1,34 @@
 import yfinance as yf
 from datetime import datetime
 import time
-
 FOREX_PAIRS = {
-    "EURUSD=X": {"nom": "EUR/USD", "description": "Euro / Dollar Américain"},
-    "GBPUSD=X": {"nom": "GBP/USD", "description": "Livre Sterling / Dollar Américain"},
-    "USDJPY=X": {"nom": "USD/JPY", "description": "Dollar Américain / Yen Japonais"},
-}
+    "EURUSD=X": {
+        "nom": "EUR/USD",
+        "description": "Euro / Dollar Américain"
+    },
+    "GBPUSD=X": {
+        "nom": "GBP/USD",
+        "description": "Livre Sterling / Dollar Américain"
+    },
+    "USDJPY=X": {
+        "nom": "USD/JPY",
+        "description": "Dollar Américain / Yen Japonais"
+    },
+    "XAUUSD=X": {
+        "nom": "XAU/USD",
+        "description": "Or / Dollar Américain"
+    },
+    "AUDUSD=X": {
+        "nom": "AUD/USD",
+        "description": "Dollar Australien / Dollar Américain"
+    },
+    "USDCAD=X": {
+        "nom": "USD/CAD",
+        "description": "Dollar Américain / Dollar Canadien"
+    },
+
+
+
 
 def afficher_banniere():
     print("\n" + "=" * 70)
